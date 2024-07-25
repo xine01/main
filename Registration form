@@ -54,7 +54,7 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #000000;
+            background-color: #FFFFFF;
         }
     </style>
 </head>
