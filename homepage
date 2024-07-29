@@ -7,7 +7,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-	background-image: url('indp.webp'); /* Local path to the plant image */
+	background-image: url('indp.webp'); /* Local path to the image */
             background-size: cover;
             background-position: center;
     box-sizing: border-box;
@@ -47,7 +47,7 @@ header nav ul li a {
 
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #606060;
+    color: #000000;
     text-align: center;
 	
     padding: 100px 20px;
@@ -68,7 +68,7 @@ header nav ul li a {
 }
 
 .hero .btn {
-    background-color: #606060;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -81,7 +81,7 @@ header nav ul li a {
 .categories {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 .categories h2 {
@@ -96,8 +96,8 @@ header nav ul li a {
 }
 
 .category-item {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
@@ -134,8 +134,8 @@ header nav ul li a {
 }
 
 .plant-item {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border: 1px solid #000000;
     border-radius: 5px;
     padding: 20px;
     margin: 10px;
@@ -156,7 +156,7 @@ header nav ul li a {
 
 .plant-item p {
     font-size: 20px;
-    color: #4CAF50;
+    color: #000000;
 }
 
 footer {
@@ -176,10 +176,10 @@ footer {
         <div class="logo"> Walkin' Cloths</div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Refund Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </header>
