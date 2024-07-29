@@ -233,7 +233,7 @@ margin: 0 auto;
         <h2>Featured</h2>
         <div class="plant-grid">
             <div class="plant-item">
-                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
+                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_20_38.496Z.png?v=1721197244&width=823">
                 <h3>Fiddle POISON Over-Sized T-Shirt</h3>
               
             </div>
@@ -245,11 +245,13 @@ margin: 0 auto;
             <div class="plant-item">
                 <img src="snake.jpg" alt="Plant 3">
                 <h3>Snake Plant</h3>
-                <p>$20.00</p>
+               
             </div>
         </div>
     </section>
-    <h4 class="title h6">Follow us</h4>
+    <h3>FOLLOW US ON :</h3>
+    <h4>YouTube 
+    <br>Instagram</h4>
     <div class="site-social" aria-label="Follow us on social media">
       
 			
