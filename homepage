@@ -1,0 +1,257 @@
+<head>
+    
+    <title>Axn Walikn' - Home</title>
+    <style>
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	background-image: url('indp.webp'); /* Local path to the plant image */
+            background-size: cover;
+            background-position: center;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #00807a;
+    text-align: center;
+	
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+	background-color:rgba(0,0,0,0.15);
+}
+
+.hero p {
+    font-size: 34px;
+    margin-bottom: 30px;
+	background-color:rgba(0,0,0,0.45);
+	color :#ffffff ;	
+		
+}
+
+.hero .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+	
+
+
+.categories {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 23%;
+}
+
+.category-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.category-item h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.featured-plants {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-plants h2 {
+    font-size: 40px;
+	color:white;
+    margin-bottom: 40px;
+}
+
+.plant-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plant-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.plant-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.plant-item h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.plant-item p {
+    font-size: 20px;
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> Walkin' Cloths</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to Walkin'</h1>
+        <p>Your one-stop shop for all things TOP to Bottom</p>
+        <a href="#" class="btn">Shop Now</a>
+        <div class="color-scheme-1 gradient">
+          <br>
+          <br>
+  <div class="section-template--16295694532696__custom_liquid_pWyH9t-padding">
+    <style>
+video {
+width: 66%;
+height: 55%;
+display: block;
+margin: 0 auto;
+}
+</style>
+<video muted="" autoplay="" playsinline="" loop="">
+    <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
+</video>
+  </div>
+</div>
+    </section>
+    
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <img src="ind.jpg" alt="Fresh & Hot ">
+                <h3>Indoor Plants</h3>
+            </div>
+            <div class="category-item">
+                <img src="outdoor.jpg" alt="Refill your Wardrobe">
+                <h3>Outdoor Plants</h3>
+            </div>
+            <div class="category-item">
+                <img src="succulents.jpg" alt="Tees">
+                <h3>Succulents</h3>
+            </div>
+            <div class="category-item">
+                <img src="flower.jpg" alt="Trousers">
+                <h3>Flowering Plants</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section class="Featured">
+        <h1>Featured</h1>
+        <div class="plant-grid">
+            <div class="plant-item">
+                <img src="monst.jpg" alt="Plant 1">
+                <h3>Monstera Deliciosa</h3>
+                <p>$25.00</p>
+            </div>
+            <div class="plant-item">
+                <img src="fiddle-leaf.jpg" alt="Plant 2">
+                <h3>Fiddle Leaf Fig</h3>
+                <p>$30.00</p>
+            </div>
+            <div class="plant-item">
+                <img src="snake.jpg" alt="Plant 3">
+                <h3>Snake Plant</h3>
+                <p>$20.00</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Plant Haven. All rights reserved.</p>
+    </footer>
+</body>
+</html>
