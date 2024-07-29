@@ -211,19 +211,19 @@ margin: 0 auto;
         <h2>Shop by Category</h2>
         <div class="category-grid">
             <div class="category-item">
-                <img src="ind.jpg" alt="Fresh & Hot ">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGI/UGI302/11A6F0192/UGI302_11A6_F0192_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
                 <h3>Fresh & Hot</h3>
             </div>
             <div class="category-item">
-                <img src="outdoor.jpg" alt="Refill your Wardrobe">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL72B/15DAF035G/UJL72B_15DA_F035G_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
                 <h3>Refill your Wardrobe</h3>
             </div>
             <div class="category-item">
-                <img src="succulents.jpg" alt="Tees">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJN/UJN861/240F0E1D/UJN861_240_F0E1D_S_232_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
                 <h3>Tees</h3>
             </div>
             <div class="category-item">
-                <img src="flower.jpg" alt="Trousers">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/S/SPH/SPH415/148UF0D65/SPH415_148U_F0D65_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
                 <h3>Trousers</h3>
             </div>
         </div>
@@ -233,18 +233,18 @@ margin: 0 auto;
         <h2>Featured</h2>
         <div class="plant-grid">
             <div class="plant-item">
-                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_20_38.496Z.png?v=1721197244&width=823">
-                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
+                <img src="https://www.jaywalking.in/cdn/shop/files/MOONLIGHT3.png?v=1717667289&width=1080">
+                <h3>MOONLIGHT TIE DYE</h3>
               
             </div>
             <div class="plant-item">
-                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
-                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
+                <img src="https://www.jaywalking.in/cdn/shop/files/stonetiedye2.png?v=1722070890&width=1080">
+                <h3>STONE TIE DYE </h3>
               
             </div>
             <div class="plant-item">
-                <img src="snake.jpg" alt="Plant 3">
-                <h3>Snake Plant</h3>
+                <img src="https://www.jaywalking.in/cdn/shop/files/logobadlyscanned4.png?v=1716973341&width=1080">
+                <h3>Badly Scanned Logo T-Shirt</h3>
                
             </div>
         </div>
