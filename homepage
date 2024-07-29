@@ -180,6 +180,7 @@ footer {
                 <li><a href="#">Terms Of Service</a></li>
                 <li><a href="#">Refund Policy</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Sign In</a></li>
             </ul>
         </nav>
     </header>
