@@ -1,260 +1,99 @@
+<html>
 <head>
     
-    <title>Axn Walikn' - Home</title>
+    <title>Registration Form</title>
     <style>
-
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-	background-image: url('indp.webp'); /* Local path to the plant image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('plntbck.jpg'); /* Local path to the plant image */
             background-size: cover;
             background-position: center;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #000000;
-    color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header .logo {
-    font-size: 34px;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #606060;
-    text-align: center;
-	
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-	background-color:rgba(0,0,0,0.15);
-}
-
-.hero p {
-    font-size: 34px;
-    margin-bottom: 30px;
-	background-color:rgba(0,0,0,0.45);
-	color :#ffffff ;	
-		
-}
-
-.hero .btn {
-    background-color: #606060;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    
-}
-
-
-.categories {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-}
-
-.categories h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.category-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.category-item {
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 23%;
-}
-
-.category-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.category-item h3 {
-    font-size: 24px;
-    margin: 15px 0;
-}
-
-.featured-plants {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.featured-plants h2 {
-    font-size: 40px;
-	color:white;
-    margin-bottom: 40px;
-}
-
-.plant-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.plant-item {
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 30%;
-}
-
-.plant-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.plant-item h3 {
-    font-size: 24px;
-    margin: 15px 0;
-}
-
-.plant-item p {
-    font-size: 20px;
-    color: #4CAF50;
-}
-
-footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+        }
+        .container {
+            max-width: 400px;
+            margin: 55px auto;
+            padding: 30px;
+            background-color: rgba(10, 200, 200, 0.65); /* Slightly transparent background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            background-color: #FFC0CB;
+            color: black;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #FFFFFF;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo"> Walkin' Cloths</div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section class="hero">
-        <h1>Welcome to Walkin'</h1>
-        <p>Your one-stop shop for all things TOP to Bottom</p>
-        <a href="#" class="btn">Shop Now</a>
-        <div class="color-scheme-1 gradient">
-          <br>
-          <br>
-  <div class="section-template--16295694532696__custom_liquid_pWyH9t-padding">
-    <style>
-video {
-width: 66%;
-height: 55%;
-display: block;
-margin: 0 auto;
-}
-</style>
-<video muted="" autoplay="" playsinline="" loop="">
-    <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
-</video>
-  </div>
+
+<div class="container">
+    <h2>Registration Form</h2>
+    <form>
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+        </div>
+        <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <button type="submit">Register</button>
+    </form>
 </div>
-    </section>
-    
-    <section class="categories">
-        <h2>Shop by Category</h2>
-        <div class="category-grid">
-            <div class="category-item">
-                <img src="ind.jpg" alt="Fresh & Hot ">
-                <h3>Fresh & Hot</h3>
-            </div>
-            <div class="category-item">
-                <img src="outdoor.jpg" alt="Refill your Wardrobe">
-                <h3>Refill your Wardrobe</h3>
-            </div>
-            <div class="category-item">
-                <img src="succulents.jpg" alt="Tees">
-                <h3>Tees</h3>
-            </div>
-            <div class="category-item">
-                <img src="flower.jpg" alt="Trousers">
-                <h3>Trousers</h3>
-            </div>
-        </div>
-    </section>
-    
-    <section class="categories">
-        <h2>Featured</h2>
-        <div class="plant-grid">
-            <div class="plant-item">
-                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
-                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
-              
-            </div>
-            <div class="plant-item">
-                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
-                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
-              
-            </div>
-            <div class="plant-item">
-                <img src="snake.jpg" alt="Plant 3">
-                <h3>Snake Plant</h3>
-                <p>$20.00</p>
-            </div>
-        </div>
-    </section>
-    <h4 class="title h6">Follow us</h4>
-    <div class="site-social" aria-label="Follow us on social media">
-      
-			
-    <footer>
-        <p>&copy; 2024 Walkin' Cloths Ltd.   All rights reserved.</p>
-    </footer>
+
 </body>
 </html>
