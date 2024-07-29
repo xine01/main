@@ -14,7 +14,7 @@
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     padding: 10px 0;
     display: flex;
@@ -47,7 +47,7 @@ header nav ul li a {
 
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #00807a;
+    color: #606060;
     text-align: center;
 	
     padding: 100px 20px;
@@ -68,14 +68,14 @@ header nav ul li a {
 }
 
 .hero .btn {
-    background-color: #4CAF50;
+    background-color: #606060;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
+    
 }
-	
 
 
 .categories {
@@ -160,7 +160,7 @@ header nav ul li a {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -212,35 +212,35 @@ margin: 0 auto;
         <div class="category-grid">
             <div class="category-item">
                 <img src="ind.jpg" alt="Fresh & Hot ">
-                <h3>Indoor Plants</h3>
+                <h3>Fresh & Hot</h3>
             </div>
             <div class="category-item">
                 <img src="outdoor.jpg" alt="Refill your Wardrobe">
-                <h3>Outdoor Plants</h3>
+                <h3>Refill your Wardrobe</h3>
             </div>
             <div class="category-item">
                 <img src="succulents.jpg" alt="Tees">
-                <h3>Succulents</h3>
+                <h3>Tees</h3>
             </div>
             <div class="category-item">
                 <img src="flower.jpg" alt="Trousers">
-                <h3>Flowering Plants</h3>
+                <h3>Trousers</h3>
             </div>
         </div>
     </section>
     
-    <section class="Featured">
-        <h1>Featured</h1>
+    <section class="categories">
+        <h2>Featured</h2>
         <div class="plant-grid">
             <div class="plant-item">
-                <img src="monst.jpg" alt="Plant 1">
-                <h3>Monstera Deliciosa</h3>
-                <p>$25.00</p>
+                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
+                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
+              
             </div>
             <div class="plant-item">
-                <img src="fiddle-leaf.jpg" alt="Plant 2">
-                <h3>Fiddle Leaf Fig</h3>
-                <p>$30.00</p>
+                <img src="https://www.retributionclo.in/cdn/shop/files/test_2024-07-17T06_21_30.278Z.png?v=1721197296&width=823">
+                <h3>Fiddle POISON Over-Sized T-Shirt</h3>
+              
             </div>
             <div class="plant-item">
                 <img src="snake.jpg" alt="Plant 3">
@@ -249,9 +249,12 @@ margin: 0 auto;
             </div>
         </div>
     </section>
-    
+    <h4 class="title h6">Follow us</h4>
+    <div class="site-social" aria-label="Follow us on social media">
+      
+			
     <footer>
-        <p>&copy; 2024 Plant Haven. All rights reserved.</p>
+        <p>&copy; 2024 Walkin' Cloths Ltd.   All rights reserved.</p>
     </footer>
 </body>
 </html>
