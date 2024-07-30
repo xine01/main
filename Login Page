@@ -1,22 +1,17 @@
-<!DOCTYPE html>
 <html>
-
-<head>
-      <title>HTML Login Form</title>
-      
-</head>
-<style>
+	<head>
+	<title>login</title>
+	<style>
 	
 	body
 	{                             
-		background:powderblue;
-
+		background:linear-gradient(to right,blue,yellow);
 	}
 	.contain{
 		display:block;
 		text-align:center;
 		margin-top:5%;
-		background-color: powderblue(0, 0, 0, 0.15);
+		background-color: rgba(0, 0, 0, 0.15);
 		margin-left:30%;
 		margin-right:30%;
 		padding-top:5%;
@@ -31,12 +26,12 @@
 		}
 	.login{
 	padding:5px;
-	background:powderblue(darkgrey,white);
+	background:linear-gradient(darkgrey,white);
 	font-size:150%;
 	border-radius:5%;
 	}
 	.login:hover{
-	background-color:powderblue;
+	background-color:darkgrey;
 	}
 	h1{
 	text-align:center;
@@ -49,46 +44,20 @@
     left: 35px;
 	}
 	</style>
-
-<body>
-      <div class="main">
-            <h1><u>Login In</u></h1>
-            <h2><u>Enter your login credentials</u></h2>
-            <form action="">
-                  <label for="first">
-                        Username:
-                  </label>
-                  <input type="text" 
-                         id="first" 
-                         name="first" 
-                         placeholder="Enter your Username" required>
-                         <br>
-                         <br>
-
-                  <label for="password">
-                        Password:
-                  </label>
-                  <input type="password"
-                         id="password" 
-                         name="password"
-                         placeholder="Enter your Password" required>
-                         <br>
-                         <br>
-
-                  <div class="wrap">
-                        <button type="submit"
-                                onclick="solve()">
-                              Submit
-                        </button>
-                  </div>
-            </form>
-            <p>Not registered?
-                  <a href="#"
-                     style="text-decoration: none;">
-                        Create an account
-                  </a>
-            </p>
-      </div>
-</body>
-
+	</head>
+	<body>
+	<u><h1>LOGIN</h1></u>
+		<form action="">
+			<div class="contain">
+			<img src="C:\Users\cs123\Downloads\user-solid.svg"  height=40px width=40px alt="NA">
+				<input type="text" class="l" placeholder="Username">
+				<br>
+				<img src="C:\Users\cs123\Downloads\lock-solid.svg"  height=40px width=40px alt="NA" >
+				<input type="password" class="l" placeholder="Password">
+				<br>
+				<button type="submit" class="login">Login</button>
+				<br>
+			</div>
+		</form>
+	</body>
 </html>
