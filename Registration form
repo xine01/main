@@ -1,7 +1,7 @@
 <html>
 <head>
     
-    <title>Registration Form</title>
+    <title>Sign Up</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,7 +61,7 @@
 <body>
 
 <div class="container">
-    <h2>Registration Form</h2>
+    <h2><u>Sign Up</u></h2>
     <form>
         <div class="form-group">
             <label for="fname">First Name</label>
