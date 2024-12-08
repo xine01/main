@@ -1,179 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    
-    <title>Axn Walikn' - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axn Walkin' - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-	background-image: url('indp.webp'); /* Local path to the image */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('indp.webp');
             background-size: cover;
             background-position: center;
-    box-sizing: border-box;
-}
-
-header {
-    background-color: #000000;
-    color: white;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header .logo {
-    font-size: 34px;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #000000;
-    text-align: center;
-	
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-	background-color:rgba(0,0,0,0.15);
-}
-
-.hero p {
-    font-size: 34px;
-    margin-bottom: 30px;
-	background-color:rgba(0,0,0,0.45);
-	color :#ffffff ;	
-		
-}
-
-.hero .btn {
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    
-}
-
-
-.categories {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-.categories h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-}
-
-.category-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.category-item {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 23%;
-}
-
-.category-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.category-item h3 {
-    font-size: 24px;
-    margin: 15px 0;
-}
-
-.featured-plants {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.featured-plants h2 {
-    font-size: 40px;
-	color:white;
-    margin-bottom: 40px;
-}
-
-.plant-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.plant-item {
-    background-color: #ffffff;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    width: 30%;
-}
-
-.plant-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.plant-item h3 {
-    font-size: 24px;
-    margin: 15px 0;
-}
-
-.plant-item p {
-    font-size: 20px;
-    color: #000000;
-}
-
-footer {
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 34px;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header nav ul li {
+            margin: 0 10px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #000000;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+        .hero p {
+            font-size: 34px;
+            margin-bottom: 30px;
+            background-color: rgba(0, 0, 0, 0.45);
+            color: #ffffff;
+        }
+        .hero .btn {
+            background-color: #000000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .categories, .featured-plants {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .categories h2, .featured-plants h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .category-grid, .plant-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .category-item, .plant-item {
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            width: 23%;
+        }
+        .category-item img, .plant-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .category-item h3, .plant-item h3 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .plant-item p {
+            font-size: 20px;
+            color: #000000;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .social-icons a i {
+            margin-right: 8px;
+        }
+        video {
+            width: 66%;
+            height: 55%;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo"> Walkin' </div>
+        <div class="logo">Walkin'</div>
         <nav>
             <ul>
                 <li><a href="#">About Us</a></li>
@@ -184,80 +145,65 @@ footer {
             </ul>
         </nav>
     </header>
-    
     <section class="hero">
         <h1>Welcome to Walkin'</h1>
         <p>ReDefine Fashion: Wear Your Story</p>
         <a href="#" class="btn">Shop Now</a>
         <div class="color-scheme-1 gradient">
-          <br>
-          <br>
-  <div class="section-template--16295694532696__custom_liquid_pWyH9t-padding">
-    <style>
-video {
-width: 66%;
-height: 55%;
-display: block;
-margin: 0 auto;
-}
-</style>
-<video muted="" autoplay="" playsinline="" loop="">
-    <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
-</video>
-  </div>
-</div>
+            <br><br>
+            <div class="section-template--16295694532696__custom_liquid_pWyH9t-padding">
+                <video muted autoplay playsinline loop>
+                    <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
     </section>
-    
     <section class="categories">
         <h2>Shop by Category</h2>
         <div class="category-grid">
             <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGI/UGI302/11A6F0192/UGI302_11A6_F0192_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGI/UGI302/11A6F0192/UGI302_11A6_F0192_S_OOO_SLF.jpg" alt="Fresh & Hot">
                 <h3>Fresh & Hot</h3>
             </div>
             <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL72B/15DAF035G/UJL72B_15DA_F035G_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL72B/15DAF035G/UJL72B_15DA_F035G_S_OOO_SLF.jpg" alt="Refill your Wardrobe">
                 <h3>Refill your Wardrobe</h3>
             </div>
             <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJN/UJN861/240F0E1D/UJN861_240_F0E1D_S_232_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJN/UJN861/240F0E1D/UJN861_240_F0E1D_S_232_SLF.jpg" alt="Tees">
                 <h3>Tees</h3>
             </div>
             <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/S/SPH/SPH415/148UF0D65/SPH415_148U_F0D65_S_OOO_SLF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.1000.1000.jpg">
+                <img src="https://www.prada.com/content/dam/pradabkg_products/S/SPH/SPH415/148UF0D65/SPH415_148U_F0D65_S_OOO_SLF.jpg" alt="Trousers">
                 <h3>Trousers</h3>
             </div>
         </div>
     </section>
-    
-    <section class="categories">
+    <section class="featured-plants">
         <h2>Featured</h2>
         <div class="plant-grid">
             <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/MOONLIGHT3.png?v=1717667289&width=1080">
+                <img src="https://www.jaywalking.in/cdn/shop/files/MOONLIGHT3.png?v=1717667289&width=1080" alt="MOONLIGHT TIE DYE">
                 <h3>MOONLIGHT TIE DYE</h3>
-              
             </div>
             <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/stonetiedye2.png?v=1722070890&width=1080">
-                <h3>STONE TIE DYE </h3>
-              
+                <img src="https://www.jaywalking.in/cdn/shop/files/stonetiedye2.png?v=1722070890&width=1080" alt="STONE TIE DYE">
+                <h3>STONE TIE DYE</h3>
             </div>
             <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/logobadlyscanned4.png?v=1716973341&width=1080">
+                <img src="https://www.jaywalking.in/cdn/shop/files/logobadlyscanned4.png?v=1716973341&width=1080" alt="Badly Scanned Logo T-Shirt">
                 <h3>Badly Scanned Logo T-Shirt</h3>
-               
             </div>
         </div>
     </section>
-    <h3>FOLLOW US ON :</h3>
-    <h4>YouTube 
-    <br>Instagram</h4>
-    <div class="site-social" aria-label="Follow us on social media">
-      
-			
     <footer>
-        <p>&copy; 2024 Walkin' Ltd.   All rights reserved.</p>
+        <p>&copy; 2024 Walkin' Ltd. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+            
+        </div>
     </footer>
 </body>
 </html>
