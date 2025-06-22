@@ -3,206 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Walkin' - ReDefine Fashion: Wear Your Story. Shop the latest trends and featured collections.">
     <title>Axn Walkin' - Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        html { box-sizing: border-box; }
+        *, *:before, *:after { box-sizing: inherit; }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('indp.webp');
-            background-size: cover;
-            background-position: center;
-            box-sizing: border-box;
+            background: url('indp.webp') no-repeat center center/cover;
+            color: #222;
+            min-height: 100vh;
         }
         header {
-            background-color: #000000;
-            color: white;
-            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            padding: 12px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-        header .logo {
-            font-size: 34px;
+        .logo {
+            font-size: 2em;
             font-weight: bold;
+            letter-spacing: 1px;
         }
-        header nav ul {
+        nav ul {
             list-style: none;
-            margin: 0;
-            padding: 0;
             display: flex;
+            gap: 18px;
+            padding: 0;
+            margin: 0;
         }
-        header nav ul li {
-            margin: 0 10px;
-        }
-        header nav ul li a {
-            color: white;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            padding: 6px 10px;
+            border-radius: 3px;
+            transition: background 0.2s;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background: #222;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5em;
         }
         .hero {
-            background: url('hero-bg.jpg') no-repeat center center/cover;
-            color: #000000;
+            position: relative;
             text-align: center;
-            padding: 100px 20px;
+            padding: 100px 20px 60px 20px;
+            background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.15)), url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
         }
         .hero h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
-            background-color: rgba(0, 0, 0, 0.15);
+            font-size: 2.7em;
+            margin-bottom: 0.5em;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.22);
         }
         .hero p {
-            font-size: 34px;
-            margin-bottom: 30px;
-            background-color: rgba(0, 0, 0, 0.45);
-            color: #ffffff;
+            font-size: 1.6em;
+            margin-bottom: 1.5em;
+            background: rgba(0,0,0,0.38);
+            display: inline-block;
+            padding: 8px 24px;
+            border-radius: 8px;
         }
         .hero .btn {
-            background-color: #000000;
-            color: white;
-            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            padding: 13px 28px;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+            font-size: 1.1em;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
         }
-        .categories, .featured-plants {
-            padding: 50px 20px;
+        .hero .btn:hover, .hero .btn:focus {
+            background: #444;
+        }
+        .hero video {
+            width: 60%;
+            max-width: 620px;
+            margin: 35px auto 0 auto;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 3px 30px rgba(0,0,0,0.28);
+        }
+        section {
+            padding: 40px 20px 30px 20px;
             text-align: center;
         }
-        .categories h2, .featured-plants h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
+        h2 {
+            font-size: 2em;
+            margin-bottom: 1.3em;
+            color: #111;
         }
         .category-grid, .plant-grid {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
+            gap: 22px;
+            justify-content: center;
         }
         .category-item, .plant-item {
-            background-color: #ffffff;
-            border: 1px solid #000000;
-            border-radius: 5px;
-            padding: 20px;
-            margin: 10px;
-            text-align: center;
-            width: 23%;
+            background: #fff;
+            border: 1px solid #dedede;
+            border-radius: 7px;
+            width: 230px;
+            max-width: 93vw;
+            min-width: 160px;
+            margin-bottom: 12px;
+            padding: 15px 12px 18px 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            transition: box-shadow 0.2s;
+        }
+        .category-item:hover, .plant-item:hover {
+            box-shadow: 0 4px 18px rgba(0,0,0,0.14);
         }
         .category-item img, .plant-item img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 7px;
         }
         .category-item h3, .plant-item h3 {
-            font-size: 24px;
-            margin: 15px 0;
+            font-size: 1.1em;
+            margin: 15px 0 0 0;
+            color: #1e1e1e;
         }
         .plant-item p {
-            font-size: 20px;
-            color: #000000;
+            font-size: 1em;
+            color: #444;
         }
         footer {
-            background-color: #000000;
-            color: white;
+            background: #000;
+            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 22px 0 12px 0;
+            margin-top: 30px;
         }
         .social-icons {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            gap: 24px;
+            margin-top: 10px;
         }
         .social-icons a {
-            margin: 0 10px;
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
+            color: #fff;
+            font-size: 1.6em;
+            transition: color 0.2s;
         }
-        .social-icons a i {
-            margin-right: 8px;
+        .social-icons a:hover, .social-icons a:focus {
+            color: #aaa;
         }
-        video {
-            width: 66%;
-            height: 55%;
-            display: block;
-            margin: 0 auto;
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .category-grid, .plant-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .category-item, .plant-item {
+                width: 85vw;
+            }
+            .hero h1 { font-size: 2em; }
+            .hero p { font-size: 1.1em; }
+        }
+        @media (max-width: 600px) {
+            header { flex-direction: column; gap: 10px; }
+            .hero { padding: 60px 7px 40px 7px;}
+            h2 { font-size: 1.25em;}
         }
     </style>
 </head>
 <body>
-    <header>
+    <header role="banner">
         <div class="logo">Walkin'</div>
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms Of Service</a></li>
-                <li><a href="#">Refund Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Sign In</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#terms">Terms Of Service</a></li>
+                <li><a href="#refund">Refund Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#signin">Sign In</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h1>Welcome to Walkin'</h1>
-        <p>ReDefine Fashion: Wear Your Story</p>
-        <a href="#" class="btn">Shop Now</a>
-        <div class="color-scheme-1 gradient">
-            <br><br>
-            <div class="section-template--16295694532696__custom_liquid_pWyH9t-padding">
-                <video muted autoplay playsinline loop>
-                    <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
-                </video>
+    <main>
+        <section class="hero" aria-label="Welcome Section">
+            <h1>Welcome to Walkin'</h1>
+            <p>ReDefine Fashion: Wear Your Story</p>
+            <a href="#shop" class="btn">Shop Now</a>
+            <video muted autoplay playsinline loop aria-label="Fashion Promo Video">
+                <source src="https://cdn.shopify.com/videos/c/o/v/9954873ebd604484b1f336c036651cb4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="categories" id="shop" aria-label="Shop by Category">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <a href="#fresh-hot" class="category-item">
+                    <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGI/UGI302/11A6F0192/UGI302_11A6_F0192_S_OOO_SLF.jpg" alt="Fresh & Hot Collection">
+                    <h3>Fresh & Hot</h3>
+                </a>
+                <a href="#wardrobe" class="category-item">
+                    <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL72B/15DAF035G/UJL72B_15DA_F035G_S_OOO_SLF.jpg" alt="Refill your Wardrobe">
+                    <h3>Refill your Wardrobe</h3>
+                </a>
+                <a href="#tees" class="category-item">
+                    <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJN/UJN861/240F0E1D/UJN861_240_F0E1D_S_232_SLF.jpg" alt="Tees Collection">
+                    <h3>Tees</h3>
+                </a>
+                <a href="#trousers" class="category-item">
+                    <img src="https://www.prada.com/content/dam/pradabkg_products/S/SPH/SPH415/148UF0D65/SPH415_148U_F0D65_S_OOO_SLF.jpg" alt="Trousers Collection">
+                    <h3>Trousers</h3>
+                </a>
             </div>
-        </div>
-    </section>
-    <section class="categories">
-        <h2>Shop by Category</h2>
-        <div class="category-grid">
-            <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UGI/UGI302/11A6F0192/UGI302_11A6_F0192_S_OOO_SLF.jpg" alt="Fresh & Hot">
-                <h3>Fresh & Hot</h3>
+        </section>
+        <section class="featured-plants" aria-label="Featured Products">
+            <h2>Featured</h2>
+            <div class="plant-grid">
+                <a href="#moonlight" class="plant-item">
+                    <img src="https://www.jaywalking.in/cdn/shop/files/MOONLIGHT3.png?v=1717667289&width=1080" alt="MOONLIGHT TIE DYE">
+                    <h3>MOONLIGHT TIE DYE</h3>
+                </a>
+                <a href="#stone" class="plant-item">
+                    <img src="https://www.jaywalking.in/cdn/shop/files/stonetiedye2.png?v=1722070890&width=1080" alt="STONE TIE DYE">
+                    <h3>STONE TIE DYE</h3>
+                </a>
+                <a href="#badly-scanned-logo" class="plant-item">
+                    <img src="https://www.jaywalking.in/cdn/shop/files/logobadlyscanned4.png?v=1716973341&width=1080" alt="Badly Scanned Logo T-Shirt">
+                    <h3>Badly Scanned Logo T-Shirt</h3>
+                </a>
             </div>
-            <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJL/UJL72B/15DAF035G/UJL72B_15DA_F035G_S_OOO_SLF.jpg" alt="Refill your Wardrobe">
-                <h3>Refill your Wardrobe</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/U/UJN/UJN861/240F0E1D/UJN861_240_F0E1D_S_232_SLF.jpg" alt="Tees">
-                <h3>Tees</h3>
-            </div>
-            <div class="category-item">
-                <img src="https://www.prada.com/content/dam/pradabkg_products/S/SPH/SPH415/148UF0D65/SPH415_148U_F0D65_S_OOO_SLF.jpg" alt="Trousers">
-                <h3>Trousers</h3>
-            </div>
-        </div>
-    </section>
-    <section class="featured-plants">
-        <h2>Featured</h2>
-        <div class="plant-grid">
-            <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/MOONLIGHT3.png?v=1717667289&width=1080" alt="MOONLIGHT TIE DYE">
-                <h3>MOONLIGHT TIE DYE</h3>
-            </div>
-            <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/stonetiedye2.png?v=1722070890&width=1080" alt="STONE TIE DYE">
-                <h3>STONE TIE DYE</h3>
-            </div>
-            <div class="plant-item">
-                <img src="https://www.jaywalking.in/cdn/shop/files/logobadlyscanned4.png?v=1716973341&width=1080" alt="Badly Scanned Logo T-Shirt">
-                <h3>Badly Scanned Logo T-Shirt</h3>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <p>&copy; 2024 Walkin' Ltd. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>
-            <a href="https://www.x.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-            
+        <div class="social-icons" aria-label="Social Links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
 </body>
