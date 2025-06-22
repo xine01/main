@@ -13,22 +13,24 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('indp.webp') no-repeat center center/cover;
-            color: #222;
+            background: #111;
+            color: #f7f7f7;
             min-height: 100vh;
         }
         header {
-            background: #000;
+            background: #181818;
             color: #fff;
-            padding: 12px 20px;
+            padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 2px solid #232323;
         }
         .logo {
             font-size: 2em;
             font-weight: bold;
             letter-spacing: 1px;
+            color: #fff;
         }
         nav ul {
             list-style: none;
@@ -38,15 +40,16 @@
             margin: 0;
         }
         nav ul li a {
-            color: #fff;
+            color: #f7f7f7;
             text-decoration: none;
             font-weight: 600;
-            padding: 6px 10px;
-            border-radius: 3px;
-            transition: background 0.2s;
+            padding: 7px 13px;
+            border-radius: 5px;
+            transition: background 0.18s;
         }
-        nav ul li a:hover, nav ul li a:focus {
-            background: #222;
+        nav ul li a:hover,
+        nav ul li a:focus {
+            background: #232323;
         }
         main {
             display: flex;
@@ -57,42 +60,55 @@
             position: relative;
             text-align: center;
             padding: 100px 20px 60px 20px;
-            background: linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.15)), url('hero-bg.jpg') no-repeat center center/cover;
+            background: #181818;
             color: #fff;
         }
         .hero h1 {
             font-size: 2.7em;
             margin-bottom: 0.5em;
             text-shadow: 0 2px 12px rgba(0,0,0,0.22);
+            font-weight: bold;
         }
         .hero p {
             font-size: 1.6em;
             margin-bottom: 1.5em;
-            background: rgba(0,0,0,0.38);
+            background: rgba(36,36,36,0.7);
             display: inline-block;
             padding: 8px 24px;
-            border-radius: 8px;
+            border-radius: 12px;
+            color: #fff;
+            font-weight: 600;
+            border: 3px solid #fff; /* White border */
+            box-shadow: 0 0 12px 2px #fff4; /* Subtle white glow for more pop */
+            /* For a different color, change #fff above to your preferred accent */
         }
         .hero .btn {
-            background: #000;
+            background: linear-gradient(90deg, #6dd5ed, #b621fe);
             color: #fff;
             padding: 13px 28px;
             text-decoration: none;
             font-size: 1.1em;
-            border-radius: 6px;
+            border-radius: 30px;
             font-weight: bold;
-            transition: background 0.2s;
+            border: none;
+            box-shadow: 0 2px 10px #000c;
+            cursor: pointer;
+            transition: filter 0.15s;
         }
         .hero .btn:hover, .hero .btn:focus {
-            background: #444;
+            filter: brightness(1.2);
         }
         .hero video {
-            width: 60%;
+            width: 60vw;
             max-width: 620px;
             margin: 35px auto 0 auto;
             display: block;
-            border-radius: 12px;
-            box-shadow: 0 3px 30px rgba(0,0,0,0.28);
+            border-radius: 16px;
+            box-shadow: 0 3px 30px #000a;
+            border: 4px solid transparent;
+            background:
+                linear-gradient(90deg, #6dd5ed, #b621fe) border-box;
+            border-image: linear-gradient(90deg, #6dd5ed, #b621fe) 1;
         }
         section {
             padding: 40px 20px 30px 20px;
@@ -101,7 +117,8 @@
         h2 {
             font-size: 2em;
             margin-bottom: 1.3em;
-            color: #111;
+            color: #fff;
+            font-weight: bold;
         }
         .category-grid, .plant-grid {
             display: flex;
@@ -110,39 +127,54 @@
             justify-content: center;
         }
         .category-item, .plant-item {
-            background: #fff;
-            border: 1px solid #dedede;
-            border-radius: 7px;
+            background: #181818;
+            border-radius: 16px;
             width: 230px;
             max-width: 93vw;
             min-width: 160px;
             margin-bottom: 12px;
             padding: 15px 12px 18px 12px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-            transition: box-shadow 0.2s;
+            box-shadow: 0 2px 12px #000a;
+            transition: box-shadow 0.2s, transform 0.17s;
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .category-item:hover, .plant-item:hover {
-            box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+            box-shadow: 0 4px 24px #6dd5ed55;
+            transform: translateY(-4px) scale(1.03);
         }
         .category-item img, .plant-item img {
             max-width: 100%;
             height: auto;
-            border-radius: 7px;
+            border-radius: 12px;
+            border: 4px solid transparent;
+            background: linear-gradient(90deg, #6dd5ed, #b621fe, #21d4fd) border-box;
+            border-image: linear-gradient(90deg, #6dd5ed, #b621fe, #21d4fd) 1;
+            margin-bottom: 13px;
+            box-shadow: 0 1px 8px #000c;
         }
         .category-item h3, .plant-item h3 {
             font-size: 1.1em;
-            margin: 15px 0 0 0;
-            color: #1e1e1e;
+            margin: 9px 0 0 0;
+            color: #fafafa;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .plant-item h3 {
+            color: #6dd5ed;
         }
         .plant-item p {
             font-size: 1em;
-            color: #444;
+            color: #bbb;
         }
         footer {
-            background: #000;
-            color: #fff;
+            background: #181818;
+            color: #eee;
             text-align: center;
-            padding: 22px 0 12px 0;
+            padding: 22px 0 10px 0;
             margin-top: 30px;
         }
         .social-icons {
@@ -152,15 +184,14 @@
             margin-top: 10px;
         }
         .social-icons a {
-            color: #fff;
+            color: #6dd5ed;
             font-size: 1.6em;
-            transition: color 0.2s;
+            transition: color 0.2s, transform 0.2s;
         }
         .social-icons a:hover, .social-icons a:focus {
-            color: #aaa;
+            color: #b621fe;
+            transform: scale(1.12) rotate(-3deg);
         }
-
-        /* Responsive */
         @media (max-width: 900px) {
             .category-grid, .plant-grid {
                 flex-direction: column;
